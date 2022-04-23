@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/app.css">
+    <title>Setting Quiz</title>
+</head>
+<body>
+<div class="main-container d-flex flex-column justify-content-center text-center bg-main">
+    <main class="container main-block bg-ternary py-6 px-10 my-10 mx-auto rounded-6">
+        <header class="row">
+            <div class="col">
+                <div class="setting-title d-flex flex-column bold-text fs-2 text-secondary ">
+                    <img src="../../img/main-img.png" alt="" class="setting-img bg-main rounded-6 my-0 mx-auto mb-6 p-4">
+                    Название викторины
+                </div>
+            </div>
+        </header>
+
+        <section class="row">
+            <div class="col">
+
+            <form class="form d-flex flex-column" action="#adres_server" method="get" enctype="multipart/form-data">
+                <div class="row mb-8">
+                    <div class="col-md-6 col-sm-12 mb-sm-8 mb-md-0 mb-8">
+                        <div class="bold-text fs-5 text-primary mb-6 text-start">Название викторины</div>
+                        <input class="form-text d-flex justify-content-start fs-8 text-secondary" type="text" name="question" placeholder="Введите название викторины" autocomplete="on">
+                        <div class="form-border"></div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bold-text fs-5 text-primary mb-6 text-start">Организатор</div>
+                        <input class="form-text d-flex justify-content-start fs-8 text-secondary" type="text" name="question" placeholder="Введите организатора викторины" autocomplete="on">
+                        <div class="form-border"></div>
+                    </div>
+                </div> 
+
+                <div class="row mb-8">
+                    <div class="col-md-6 col-sm-12 mb-sm-8 mb-md-0 mb-8">
+                        <div class="bold-text fs-5 text-primary mb-6 text-start">Награда за ответ</div>
+                        <input class="form-text d-flex justify-content-start fs-8 text-secondary" type="text" name="question" placeholder="Установите награду" autocomplete="on">
+                        <div class="form-border"></div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="bold-text fs-5 text-primary mb-6 text-start">Режим игры</div>
+                        <div class="form-play d-flex justify-content-start ">
+                            <div class="btn form-btn me-2 medium-text fs-8 px-4 py-1 rounded-2">
+                                Одиночный
+                            </div>
+                            <div class="btn form-btn medium-text fs-8 rounded-2">
+                                Командный
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="row mb-8">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="bold-text fs-5 text-primary mb-6 text-start">Время на ответ</div>
+                        <input class="form-text d-flex justify-content-start fs-8 text-secondary" 
+                        type="text" name="question" placeholder="Введите время на ответ" autocomplete="on">
+                        <div class="form-border"></div>
+                    </div>
+                </div> 
+                
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <div class="bold-text fs-5 text-primary mb-6 text-start">Афиша викторины</div>
+                        
+                        <div class="d-flex justify-content-start form-photo position-relative">
+                            <input class="ad-photo position-absolute " type="file" name="photo" multiple accept="image/*,image/jpeg">
+                            
+                            <div class="block-photo rounded-1 d-flex justify-content-between align-items-center">
+                                <div class="fs-4 text-primary opacity-50 ms-0 ms-sm-1 ms-md-6 ">
+                                    Выбрать файл
+                                </div>
+                                <img class="photo-img rounded-1 bg-primary p-2" alt="" src="../../img/main-img-low.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            </div>
+        </section> 
+
+        <footer class="row">
+            <div class="col">
+                <div class="btn btn-footer rounded-3 mt-12 medium-text py-3 px-9 fs-4">
+                    Далее
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
+</body>
+</html>

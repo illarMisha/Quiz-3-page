@@ -1,0 +1,5 @@
+@import "_variables";
+
+@each $name, $var in $weight {
+    .#{$name}-text{font-weight: #{$var}};
+}

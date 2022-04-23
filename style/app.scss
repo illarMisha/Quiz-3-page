@@ -1,0 +1,169 @@
+
+@import '_base';
+@import '_variables';
+@import '_utilities';
+@import '_fonts';
+@import '_function';
+
+
+.cursor-pointer{
+    cursor:pointer;
+}
+
+
+.main-container{
+
+    .main-block{
+        box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+
+        .question-img{
+            width: 200px;
+        }
+        .timer{
+            top:0;
+            right: 0;
+        } 
+        .answer-input{
+            width: 20px;
+            height: 20px;
+            border: 1px solid $primary;
+        }
+        .btn-question{
+            background: linear-gradient(101deg, rgba(89, 50, 234, 0.4) 12.69%, rgba(253, 175, 250, 0.4) 101.59%), #7250F2;
+        }
+    
+// setting-quiz
+
+        .setting-title{
+            margin-bottom: 100px;
+            .setting-img{
+                width: 150px;
+            }
+        }
+
+        .form{
+            .form-text{
+                width: 270px;
+                height: 20px;
+                outline:none;
+                border: 0px;
+            }
+            .form-border{
+                width: 350px;
+                border: 1px solid #393939;
+            }
+            .form-play{
+                .form-btn{
+                    color: $primary;
+                    border: 1px solid $primary;
+
+                    &:hover{
+                        background-color: $primary;
+                        color: $ternary;
+                    }
+                }
+            }
+            .form-photo{
+                .ad-photo{
+                    width: 300px;
+                    height: 60px;
+                    cursor: pointer;
+                    opacity: 0;
+                }
+                .block-photo{
+                    width: 300px;
+                    height: 60px;
+                    border: 1px solid $primary;
+                    .photo-img{
+                        height: 60px;
+                    }
+                }
+            }
+        }
+        .btn-footer{
+            border: 1px solid $primary;
+            color: $primary;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: $primary;
+                color: $ternary;
+            }
+        }  
+    }
+    // main-quiz
+    .profile{
+        box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+        .elipce{
+            width: 100px;
+            height: 100px;
+            border: 3px solid;
+        }
+    }
+    .test{
+        box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+        .test__img{
+            width: 30px;
+        }
+        
+        .test__btn{
+            border: 2px solid $primary;
+        }
+    }
+    .all-test{
+        right: 15px;
+        bottom:10px; 
+    }
+    .main-logo{
+        box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+    }
+}
+@media(max-width:992px){
+    
+    .main-container .main-block .form .form-border{
+        width: 250px;
+    }
+} 
+@media (max-width:767px){
+
+    .main-container .main-block .form .form-photo .block-photo .photo-text{
+        font-size: 14px;
+        margin-left: 20px; 
+    }
+    .main-container .main-block .form .form-photo .ad-photo{
+        width: 210px;
+    }
+    .main-container .main-block .form .margin-bottom-text{
+        margin-bottom: 0;
+    }
+    .main-container .main-block .btn-footer-big{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 576px){
+    .main-container .main-block .form .form-photo .block-photo .photo-text{
+        font-size: 14px;
+    }
+    .main-container .main-block .form .form-photo .block-photo{
+        width: 210px;
+    }
+}
+
+
+
+
+@import '_vendors';
+
+a{
+    text-decoration: none;
+}
+ul,ol,li{
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+}
+input{
+    font-family: 'Montserrat';
+    font-weight: 500;
+}

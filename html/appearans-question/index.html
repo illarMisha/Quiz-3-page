@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/app.css">
+    <title>Внешний вид вопроса</title>
+</head>
+<body>
+<div class="main-container d-flex flex-column justify-content-center text-center bg-main">
+    <main class="container main-block bg-ternary py-6 px-10 my-10 mx-auto rounded-6">
+        <header class="row ">
+            <div class="col">
+                <div class="mb-4 d-flex flex-column bold-text main-title position-relative">
+                    
+                    <div class="timer position-absolute">
+                        <div id="countdown" class="fs-7 text-red d-flex bold-text">
+                            <img src="../../img/time.svg" alt="" class="img-time ">
+                            <div class="ms-3 d-flex flex-column">
+                                <span class="countdown-text">Осталось</span>
+                                <div class="d-flex justify-content-center">
+                                    0
+                                    <span class="minutes countdown-time"></span>
+                                    :
+                                    <span class="seconds countdown-time"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="../../img/photo-question.png" alt="" class="question-img mx-auto my-0">
+                    Викторина на знание С++
+                    
+                </div>
+            </div>
+        </header>
+
+        <section class="row">
+            <div class="col">
+
+                <div class="text-primary text-start d-flex flex-column justify-content-start bold-text">
+
+                    <div class="mt-6 me-3 fs-2">Вопрос 1 </div>
+                    <div class="mt-7 fs-5">Использование С++</div>
+                   
+                    <fieldset class="d-flex flex-column">
+                        <legend class="fs-5 mt-9">
+                            Для чего используется С++ ?
+                        </legend>
+                        <div class="fs-8 opacity-50 text-secondary mt-6 regular-text">
+                            Выберите несколько вариантов ответы
+                        </div>
+                    
+                        <div class = "answer-block d-flex align-items-center mt-6">
+                            <input class="answer-input" type= "checkbox" name="a" id="answer-4" value="answer" >
+                            <label class="medium-text fs-6 ms-4 text-secondary" for="answer-4">
+                                C++ для веб-разработки и для разработки под Android
+                            </label>
+                        </div>
+                        <div class = "answer-block d-flex align-items-center mt-6">
+                            <input class="answer-input" type= "checkbox" name="a" id="answer-2" value="answer" >
+                            <label class="fs-6 ms-4 text-secondary medium-text" for="answer-2">
+                                C++используется в анализе данных, машинном обучении
+                            </label>
+                        </div>
+                        <div class = "answer-block d-flex align-items-center mt-6">
+                            <input class="answer-input" type = "checkbox" name="a" id="answer-4" value="answer" >
+                            <label class="fs-6 ms-4 text-secondary medium-text" for="answer-4">
+                                C++ для веб-разработки и для разработки под Android
+                            </label>
+                        </div>
+                        <div class = "answer-block d-flex align-items-center mt-6">
+                            <input class="answer-input" type = "checkbox" name="a" id="answer-4" value="answer" >
+                            <label class="fs-6 ms-4 text-secondary medium-text" for="answer-4">
+                                C++ для веб-разработки и для разработки под Android
+                            </label>
+                        </div>
+                    </fieldset>
+                </div> 
+            </div>
+        </section>  
+
+        <footer class="row">
+            <div class="col fs-7 mt-12 py-3 px-4 d-flex justify-content-start">
+                <a class="btn btn-question text-ternary rounded-2 bold-text">
+                    Ответить
+                </a>
+            </div>
+        </footer>
+    </main>
+</div>
+
+<script src="../../app.js"></script>
+</body>
+</html>

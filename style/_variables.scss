@@ -1,0 +1,64 @@
+body{
+    background-color: #E5E5E5;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+$font-weight-medium: 500;
+$font-weight-extra: 800;
+
+$font-family-base: 'Montserrat';
+
+$primary:       rgba(115, 80, 242, 1);
+$secondary:     rgba(46, 46, 46, 1) ;
+$ternary:       rgba(255, 255, 255, 1);
+$red:           #ff0000;
+$main:          #E5E5E5;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "ternary":    $ternary,
+  "red":        $red,
+  "main":       $main,
+);
+
+$spacer: 1rem;
+$spacers: (// 5 10 15 20 25 30 ... (px)
+  0: 0,
+  1: $spacer * .3125,
+  2: $spacer * .625,
+  3: $spacer * .9375,
+  4: $spacer * 1.25,
+  5: $spacer * 1.5625,
+  6: $spacer * 1.875,
+  7: $spacer * 2.1875,
+  8: $spacer * 2.5,
+  9: $spacer * 2.8125,
+  10: $spacer * 3.125,
+  11: $spacer * 3.4375,
+  12: $spacer * 3.75,
+);
+
+$extra: 800;
+$bold: 700;
+$medium: 500;
+$regular: 400;
+
+$weight: (
+    'bold': $bold,
+    'medium': $medium,
+    'regular': $regular,
+    'extra': $extra,
+);
+
+$border-radius-5: 5px;
+$border-radius-10: 10px;
+$border-radius-15: 15px;
+$border-radius-20: 20px;
+$border-radius-25: 25px;
+$border-radius-30: 30px;
+
+
