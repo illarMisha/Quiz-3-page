@@ -267,12 +267,6 @@
   transition: opacity 0.25s ease-out, transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
-body {
-  background-color: #E5E5E5;
-  font-family: 'Montserrat';
-  font-weight: 500;
-}
-
 @font-face {
   font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Bold.ttf);
@@ -295,12 +289,6 @@ body {
   font-family: 'Montserrat';
   src: url(../fonts/Montserrat-ExtraBold.ttf);
   font-weight: 800;
-}
-
-body {
-  background-color: #E5E5E5;
-  font-family: 'Montserrat';
-  font-weight: 500;
 }
 
 .bold-text {
@@ -368,6 +356,7 @@ body {
 }
 
 .main-container .main-block .form .form-play .form-btn {
+  color: #7350f2;
   border: 1px solid #7350f2;
 }
 
@@ -571,32 +560,32 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.525rem + 3.3vw);
 }
 
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.35rem + 1.2vw);
 }
 
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(1.30625rem + 0.675vw);
 }
 
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.75rem;
+    font-size: 1.8125rem;
   }
 }
 
@@ -611,11 +600,17 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: calc(1.25625rem + 0.075vw);
+}
+
+@media (min-width: 1200px) {
+  h5, .h5 {
+    font-size: 1.3125rem;
+  }
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 p {
@@ -9567,15 +9562,15 @@ fieldset:disabled .btn {
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.525rem + 3.3vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: calc(1.35rem + 1.2vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: calc(1.30625rem + 0.675vw) !important;
 }
 
 .fs-4 {
@@ -9583,11 +9578,23 @@ fieldset:disabled .btn {
 }
 
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: calc(1.25625rem + 0.075vw) !important;
 }
 
 .fs-6 {
-  font-size: 1rem !important;
+  font-size: 1.125rem !important;
+}
+
+.fs-7 {
+  font-size: 1.125rem !important;
+}
+
+.fs-8 {
+  font-size: 1.125rem !important;
+}
+
+.fs-9 {
+  font-size: 1.125rem !important;
 }
 
 .fst-italic {
@@ -14521,16 +14528,19 @@ fieldset:disabled .btn {
 
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.5rem !important;
+    font-size: 4rem !important;
   }
   .fs-2 {
-    font-size: 2rem !important;
+    font-size: 2.25rem !important;
   }
   .fs-3 {
-    font-size: 1.75rem !important;
+    font-size: 1.8125rem !important;
   }
   .fs-4 {
     font-size: 1.5rem !important;
+  }
+  .fs-5 {
+    font-size: 1.3125rem !important;
   }
 }
 

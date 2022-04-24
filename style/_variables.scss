@@ -1,22 +1,20 @@
-body{
-    background-color: #E5E5E5;
-    font-family: 'Montserrat';
-    font-weight: 500;
-}
+// Variable SCSS
 
+// font-weight
 $font-weight-medium: 500;
 $font-weight-extra: 800;
 
+//font-family
+
 $font-family-base: 'Montserrat';
 
+// Color
 $primary:       rgba(115, 80, 242, 1);
 $secondary:     rgba(46, 46, 46, 1) ;
 $ternary:       rgba(255, 255, 255, 1);
 $red:           #ff0000;
 $main:          #E5E5E5;
-// scss-docs-end theme-color-variables
 
-// scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
@@ -25,8 +23,12 @@ $theme-colors: (
   "main":       $main,
 );
 
+// Variable - margin and padding
 $spacer: 1rem;
-$spacers: (// 5 10 15 20 25 30 ... (px)
+
+// 0 5 10 15 20 ... 60px
+
+$spacers: (
   0: 0,
   1: $spacer * .3125,
   2: $spacer * .625,
@@ -42,6 +44,8 @@ $spacers: (// 5 10 15 20 25 30 ... (px)
   12: $spacer * 3.75,
 );
 
+// font-weight
+
 $extra: 800;
 $bold: 700;
 $medium: 500;
@@ -54,6 +58,8 @@ $weight: (
     'extra': $extra,
 );
 
+// border-radius
+
 $border-radius-5: 5px;
 $border-radius-10: 10px;
 $border-radius-15: 15px;
@@ -61,4 +67,31 @@ $border-radius-20: 20px;
 $border-radius-25: 25px;
 $border-radius-30: 30px;
 
+// font-size
 
+$font-size-base: 1rem;
+
+$h1-font-size:                $font-size-base * 4;
+$h2-font-size:                $font-size-base * 2.25;
+$h3-font-size:                $font-size-base *  1.8125;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.3125;
+$h6-font-size:                $font-size-base * 1.125;
+$h7-font-size:                $font-size-base * 0.875;
+$h8font-size:                 $font-size-base * 0.75;
+$h9-font-size:                $font-size-base * 0.5;
+
+// scss-docs-end font-variables
+
+// scss-docs-start font-sizes
+$font-sizes: (
+  1: $h1-font-size, // 64px
+  2: $h2-font-size, // 36px
+  3: $h3-font-size, // 29px
+  4: $h4-font-size, // 24px
+  5: $h5-font-size, // 21px
+  6: $h6-font-size, // 18px
+  7: $h6-font-size, // 14px
+  8: $h6-font-size, // 12px
+  9: $h6-font-size, // 8px
+);
