@@ -311,9 +311,74 @@
   cursor: pointer;
 }
 
+.bg-rgba {
+  background: linear-gradient(101deg, rgba(89, 50, 234, 0.4) 12.69%, rgba(253, 175, 250, 0.4) 101.59%), #7350f2;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-rgba .bg-table {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.btn-control .trel-footer {
+  border: 30px solid transparent;
+  border-left: 40px solid white;
+  border-radius: 10px;
+}
+
+.main-container .line-around {
+  border: 10px solid #FFFFFF;
+  border-radius: 52px;
+}
+
+.main-container .line-around .table {
+  border: 3px solid rgba(120, 87, 243, 0.46);
+  -webkit-box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+          box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.main-container .line-around .table .thead {
+  -webkit-box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+          box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 27px;
+}
+
+.main-container .line-around .table .tbody tr {
+  border: 1px solid rgba(89, 50, 234, 0.46);
+}
+
+.main-container .line-around .table .tbody tr td {
+  border: 2px solid rgba(89, 50, 234, 0.46);
+}
+
 .main-container .main-block {
   -webkit-box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
           box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+}
+
+.main-container .main-block .block-team {
+  border: 1px solid #5932EA;
+  border-radius: 70px;
+}
+
+.main-container .main-block .block-team .width-33 {
+  width: 33.3333%;
 }
 
 .main-container .main-block .question-img {
@@ -323,6 +388,7 @@
 .main-container .main-block .timer {
   top: 0;
   right: 0;
+  position: absolute;
 }
 
 .main-container .main-block .answer-input {
@@ -428,9 +494,18 @@
           box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
 }
 
+@media (max-width: 1450px) {
+  .img-pict .bg-table {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
   .main-container .main-block .form .form-border {
     width: 250px;
+  }
+  .margin-top-btn {
+    margin-top: 30px;
   }
 }
 
@@ -457,6 +532,16 @@
   }
   .main-container .main-block .form .form-photo .block-photo {
     width: 210px;
+  }
+  .main-container .main-block .timer {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
   }
 }
 

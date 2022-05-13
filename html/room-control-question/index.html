@@ -10,12 +10,12 @@
 </head>
 <body>
 <div class="main-container d-flex flex-column justify-content-center text-center bg-main">
-    <main class="container main-block bg-ternary py-6 px-10 my-10 mx-auto rounded-6">
+    <main class="container main-block bg-ternary py-6 px-sm-10 px-xs-4 my-10 mx-auto rounded-6">
         <header class="row ">
             <div class="col">
                 <div class="mb-4 d-flex flex-column bold-text main-title position-relative">
                     
-                    <div class="timer ">
+                    <div class="timer">
                         <div id="countdown" class="fs-7 text-red d-flex bold-text">
                             <img src="../../img/time.svg" alt="" class="img-time ">
                             <div class="ms-3 d-flex flex-column">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
 
-                    <img src="../../img/photo-question.png" alt="" class="question-img mx-auto my-0 ">
+                    <img src="../../img/photo-question.png" alt="" class="question-img mx-auto">
                     <div class="fs-2">Викторина на знание С++</div>
                     
                 </div>
@@ -83,11 +83,15 @@
         </section>  
 
         <footer class="row ">
-            <div class="col fs-7 mt-12 py-3 px-4 d-flex justify-content-start">
-                <a class="btn btn-question text-ternary rounded-2 bold-text">
-                    Ответить
+           <div class="col d-flex mt-12 ">
+                <a class="btn btn-question text-ternary rounded-2 bold-text py-3 px-6 me-4 fs-7 bold-text" href="#">
+                    Запустить таймер
                 </a>
-            </div>
+
+                <a class=" btn btn-question text-ternary rounded-2 bold-text py-3 px-6 fs-7 bold-text" href="#">
+                   Следующий вопрос
+                </a>
+           </div>
         </footer>
     </main>
 </div>
